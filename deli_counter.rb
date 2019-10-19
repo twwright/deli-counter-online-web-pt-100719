@@ -5,9 +5,9 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     orderedarr = katz_deli.map do |person|
-      katz_deli.index(person).to_s + ". " + person
+      katz_deli.index(person)+1.to_s + ". " + person
     end
-    puts "The line is currently:" + orderedarr.join(" ")
+    puts "The line is currently: " + orderedarr.join(" ")
   end
 end
 
