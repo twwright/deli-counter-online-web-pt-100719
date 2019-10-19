@@ -5,7 +5,7 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     orderedarr = katz_deli.map do |person|
-      katz_deli.index(person) + person
+      katz_deli.index(person).to_s + ". " + person
     end
     puts "The line is currently:" + orderedarr
   end
