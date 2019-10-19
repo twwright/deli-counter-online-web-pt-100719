@@ -1,12 +1,12 @@
 katz_deli = []
 
 def take_a_number(katz_deli, name)
-  if katz_deli == 0
-    "The line is currently empty!"
-  else
+  katz_deli.each do
+    currentline = []
     currentline << name
     puts "Welcome, #{name}. You are number #{{currentline.count.with_index(1)}}."
   end
 end
 
-def
+def line(katz_deli)
+  puts "The line is currently:" + katz_deli.join()
