@@ -4,10 +4,8 @@ def line(katz_deli)
   if katz_deli.count == 0
     puts "The line is currently empty."
   else
-    orderedarr = []
-    katz_deli.map do |person|
+    orderedarr = katz_deli.map do |person|
       "#{katz_deli.index(person)+1}" + ". " + person
-      orderedarr << person
     end
     puts "The line is currently: " + orderedarr.join(" ")
     orderedarr
