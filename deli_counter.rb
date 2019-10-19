@@ -19,8 +19,12 @@ def take_a_number(katz_deli, name)
 end
 
 def now_serving(katz_deli)
+  if katz_deli.count = 0
+    puts "There is nobody waiting to be server"!
+  else
   katz_deli.each do |person|
     puts "Currently serving #{person}."
     katz_deli.shift
+    end
   end
 end
