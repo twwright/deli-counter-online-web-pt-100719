@@ -6,8 +6,7 @@ def line(katz_deli)
   else
     orderedarr = katz_deli.map do |person|
       "#{katz_deli.index(person)+1}" + ". " + person
-      katz_deli << person
-    end
+      end
     puts "The line is currently: " + orderedarr.join(" ")
     orderedarr
   end
