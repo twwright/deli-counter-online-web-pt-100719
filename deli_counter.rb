@@ -14,7 +14,7 @@ end
 def take_a_number(katz_deli, name)
   katz_deli.each do |new|
     katz_deli.push(new)
-    puts "Welcome, #{name}. You are number #{{katz_deli.count.with_index(1)}}."
+    puts "Welcome, #{name}. You are number #{katz_deli.count.with_index(1)}."
   end
 end
 
