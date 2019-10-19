@@ -7,7 +7,7 @@ def line(katz_deli)
     katz_deli.map do |person|
       "#{katz_deli.index(person)+1}" + ". " + person
       end
-    puts "The line is currently: " + orderedarr.join(" ")
+    puts "The line is currently: " + katz_deli.join(" ")
     katz_deli
   end
 end
