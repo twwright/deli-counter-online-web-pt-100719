@@ -22,11 +22,9 @@ def now_serving(katz_deli)
   if katz_deli.count == 0
     puts "There is nobody waiting to be served!"
   else
-    newarr []
-    newarr = katz_deli.each do |person|
-    "Currently serving #{person}."
-    newarr.shift
-    katz_deli
+    katz_deli.each do |person|
+    puts "Currently serving #{person}."
+    katz_deli.shift
     end
   end
 end
