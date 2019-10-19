@@ -8,7 +8,7 @@ def line(katz_deli)
       "#{katz_deli.index(person)+1}" + ". " + person
       end
     puts "The line is currently: " + orderedarr.join(" ")
-    orderedarr
+    katz_deli << orderedarr
   end
 end
 
