@@ -27,6 +27,7 @@ def now_serving(katz_deli)
     katz_deli.each do |person|
     "Currently serving #{person}."
     katz_deli.shift
+    binding.pry
     end
   end
 end
